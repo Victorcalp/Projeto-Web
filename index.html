@@ -1,6 +1,8 @@
 <!--
     Identação Shift + Alt + F 
  
+    stylesheet - folha de estilo
+
     <br> - quebra de linha
     &nbsp; - espaço em branco
     <wbr> - para quebrar a palavra, redirecionamento do navegador, quando diminui
@@ -26,7 +28,21 @@
     <code></code> - formata codigo - semantico
     <pre></pre> - pré-formatado, da forma que vc digita no HTML
     
+    <ol type="1"> - lista numerica
+    <ol type="a"> - lista alfabetica
+    <ol type="A"> - lista alfabetica maiusculo
+    <ol type="i"> - lista romanos
+    <ol type="I"> - lista romanos maiusculo
 
+    <ol type="1" start="3"> - começa do numero 3    
+    
+        <ul>
+            type="square" - quadrado
+            circle = circulo
+            disc - disco
+    
+    target="_blank" -- abre em outra aba
+    target="_self" -- padrão, abre o link na mesma pagina
 -->
 
 <!DOCTYPE html>
@@ -47,14 +63,19 @@
                 <h2>A revolução do Google está chegando</h2>
             </hgroup>
 
-            <img src="Imagens/glass-oculos-preto-peq.png" alt="Oculos preto pequeno">
+            <img class="teste" src="Imagens/glass-oculos-preto-peq.png" alt="Oculos preto pequeno">
 
-            Menu Principal
-            - Home
-            - Especificações
-            - Fotos
-            - Multimídia
-            - Fale conosco
+            <nav class="menu">
+                <!--Area de navegação do site, Menu-->
+                <h1>Menu Principal</h1>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="specs.html">Especificações</a></li>
+                    <li><a href="fotos.html">Fotos</a></li>
+                    <li><a href="multimidia.html">Multimídia</a></li>
+                    <li><a href="fale-conosco.html">Fale conosco</a></li>
+                </ul>
+            </nav>
         </header>
 
         <hgroup>
@@ -68,16 +89,27 @@
         <p>O Google Glass é um acessório em forma de óculos que possibilita a interação dos usuários com diversos
             conteúdos
             em realidade aumentada. Também chamado de Project Glass, o eletrônico é capaz de tirar fotos a partir de
-            comandos de voz, enviar mensagens instantâneas e realizar vídeo&shy;conferên&shy;cias. Seu lançamento está previsto
+            comandos de voz, enviar mensagens instantâneas e realizar vídeo&shy;conferên&shy;cias. Seu lançamento está
+            previsto
             para 2014, e seu preço deve ser de US$ 1,5 mil. Atualmente o Google Glass encontra-se em fase de testes e já
-            possui um vídeo totalmente gravado com o dispositivo. Além disso, a companhia de buscas registrou novas patentes
+            possui um vídeo totalmente gravado com o dispositivo. Além disso, a companhia de buscas registrou novas
+            patentes
             anti-furto e de desbloqueio de tela para o acessório.</p>
 
-        [AQUI ENTRA UMA FOTO]
+        <figure class="foto-legenda">
+            <!-- Semantico, para imagens, ajuda os mecanismos de busca e leitores -->
+            <img src="Imagens/glass-quadro-homem-mulher.jpg" alt="Glass Homem e Mulher">
+            <figcaption>
+                <!-- Legenda da foto-->
+                <h3>Google Glass</h3>
+                <p>Uma nova maneira de ver o mundo</p>
+            </figcaption>
+        </figure>
 
         <h1>Data de lançamento</h1>
         <p>Não há uma data específica e oficial para o dispositivo ser lançado, ainda. Pode ser que ele esteja
-            disponível em demonstrações a partir de 2013, mas seu lançamento para as lojas fica para, pelo menos, 2014.</p>
+            disponível em demonstrações a partir de 2013, mas seu lançamento para as lojas fica para, pelo menos, 2014.
+        </p>
 
         <h1>Especificações Técnicas</h1>
         Tabela Técnica do Google Glass Mar/2013
@@ -107,7 +139,8 @@
         <h1>Novidades no Glass</h1>
         <p>O Google enfim revelou as especificações completas do Google Glass, e com ele uma surpresa ainda inédita no
             mercado: a gigante das buscas usará um sistema de áudio baseado na transdução por condução. Através das
-            hastes dos óculos, o som será transmitido para o ouvido do usuário por meio de microvibrações em determinados ossos
+            hastes dos óculos, o som será transmitido para o ouvido do usuário por meio de microvibrações em
+            determinados ossos
             de sua cabeça, sem usar nenhum tipo de alto-falante.</p>
 
         <p>Além da surpresa do áudio, a tela montada a frente do olho do usuário também chamou atenção. Serão 640 x 360
