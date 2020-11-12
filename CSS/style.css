@@ -1,0 +1,17 @@
+/*
+    font-size: 30pt; tamanho da letra
+    font-family: Arial, Helvetica, sans-serif;
+    Color: blue;
+    text-shadow: 2px 2px 2px black; deslocamento lateral, deslocamento vertical, espalhamento da sombra e a cor da sombra
+    text-decoration: serve para colocar linha em cima, baixo, riscado ou tira formatação
+    font-weight: deixa em negrito e tbm pode definir o nivel de negrito
+    text-align: alinha o texto
+    text-indent: identa o arquivo, marca de paragrafo
+
+    COR: #00(red)00(green)00(blue)0(transparencia, zero totalmente transparente e 1 totalmente visivel)
+*/
+
+p{
+  text-align: justify;
+  text-indent: 50px;
+}
